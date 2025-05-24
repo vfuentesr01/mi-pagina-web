@@ -1,6 +1,7 @@
 import Ejemplo from "~/components/Ejemplo";
 import type { Route } from "./+types/home";
 import Noticia from "~/components/noticia";
+import { styleText } from "util";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -12,14 +13,14 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
 
   return (
-
+    
     <div className="flex h-screen m-auto w-full items-center justify-center">
       <div className="grid h-full w-full gap-4 bg-gray-200 p-2 grid-cols-4 grid-rows-5 rounded-lg shadow-md">
 
         <div
           className="col-span-1 row-span-2 bg-pink-200 rounded-lg shadow-md flex items-center justify-center"
         >
-          <p className="text-6xl text-gray-600">ROSALíA</p>
+          <p className="font-graffiti text-6xl text-gray-600">ROSALíA</p>
         </div>
 
         <div

@@ -3,13 +3,21 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+  --font-graffiti: "DinaPuff";
+  }
 
 html,
 body {
   @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
+  font-family: 'DinaPuff'; 
+    @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+@font-face {
+  font-family: DinaPuff;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/DynaPuff.ttf") format("truetype");
 }
